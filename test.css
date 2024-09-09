@@ -1,0 +1,62 @@
+.oswald-uniquifier {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* Material Icons Outlined Style */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* Material Icons Styles */
+.material-icons {
+    font-family: "Material Icons", sans-serif;
+    font-size: 48px;
+}
+
+/* Material Icons Outlined */
+.material-icons-outlined {
+    font-family: "Material Icons Outlined", sans-serif;
+    font-size: 48px;
+    
+}
+
+/* Material Icons Two Tone */
+.material-icons-two-tone {
+    font-family: "Material Icons Two Tone", sans-serif;
+    font-size: 48px;
+}
+
+.two-tone-heart {
+    font-family: "Material Icons Two Tone", sans-serif;
+    font-size: 48px;
+    color: transparent;
+}
+
+
+.two-tone-heart::before {
+    content: "\E87C"; /* Unicode für Herz */
+    background: linear-gradient(to right, blue, white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Material Icons Round */
+.material-icons-round {
+    font-family: "Material Icons Round", sans-serif;
+    font-size: 48px;
+}
+
+/* Material Icons Sharp */
+.material-icons-sharp {
+    font-family: "Material Icons Sharp", sans-serif;
+    font-size: 48px;
+    color: antiquewhite;
+}
