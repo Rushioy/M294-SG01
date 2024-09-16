@@ -1,0 +1,66 @@
+/* Custom styles for the color boxes */
+/* .color-box {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .black {
+    background-color: #000000;
+  }
+  
+  .teal {
+    background-color: #008888;
+  }
+  
+  .dark-teal {
+    background-color: #006666;
+  }
+  
+  nav ul li a {
+    color: black !important;
+  }
+  
+  table thead {
+    background-color: #ff9800;
+  }
+  
+  table tbody tr {
+    background-color: #ffe0b2;
+  }
+  
+  .container {
+    margin-top: 50px; /* Passe den Wert nach deinen Wünschen an */
+  /* } */
+
+
+   /* Custom styles for the color boxes */
+.color-box {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .black {
+    background-color: #000000;
+  }
+  
+  nav ul li a {
+    color: black !important;
+  }
+  
+  table thead {
+    background-color: #ff9800;
+  }
+  
+  table tbody tr {
+    background-color: #ffe0b2;
+  }
+  
+  .fixed-action-btn {
+    right: 20px;
+    bottom: 20px;
+  }
+  
