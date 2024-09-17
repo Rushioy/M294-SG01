@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="input_text.css">
+    <title>Titel der Seite</title>
+</head>
+<body>
+
+
+   <form action="API.php?feld1=Harald" method="post">
+
+    
+
+    <div class="input-field">
+        <input type="text" name="name" id="name" minlength="2" maxlength="4">
+        <label for="name">Gib hier Deinen Namen ein: </label>
+    </div>
+
+    <script>
+        $('input#name').characterCounter();
+    </script>
+
+    <div class="input-field" style="color: pink;">
+        <i class="material-icons prefix">home</i>
+        <input type="text" name="strasse" id="strasse" placeholder="Bitte Name eingeben">
+        <label for="name">Gib hier Deine Strasse ein: </label>
+    </div>
+
+
+
+
+        <div class="input-field">
+
+            <input type="text" name="vorname" id="vorname" placeholder="Bitte Name eingeben">
+        
+        </div>
+            
+        
+        
+        
+        <input type="submit" value="senden" name="submit">
+
+
+          
+        
+
+
+   </form> 
+
+   <p id="anzeigen"></p>
+   <script>
+    $('input#name').val('Jaaaaa');
+
+    $('input#name').addClass('valid');
+    M.updateTextFields();
+        //ajax request
+        $('form').submit(function(e) {
+
+            $.ajax({
+                type:"post",
+                url: "API.php?feld1=Harald",
+                data: {
+                    name: $('input[name=name]').val(),
+                    strasse: $('input[name=strasse]').val(),
+                    vorname: $('input[name=vorname]').val()
+                },
+                dataType: "html",
+                success: function(response){
+                    //response in anzeigen anzeigen
+                    $('#anzeigen').html(response);
+                }
+
+
+
+
+            });
+        });
+   </script>
+
+
+
+
+</body>
+</html>

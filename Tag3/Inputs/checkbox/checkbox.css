@@ -1,0 +1,14 @@
+.topmargin {
+    margin-top: 30px;
+}
+
+[type="checkbox"]:checked+span:before,
+[type="checkbox"]:checked+span:not(.lever):before,
+[type="checkbox"].with-gap:checked+span:before {
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+#Absatz1 {
+    text-align: center;
+}

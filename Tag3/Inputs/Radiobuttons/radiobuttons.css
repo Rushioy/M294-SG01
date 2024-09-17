@@ -1,0 +1,21 @@
+.topmargin {
+    margin-top: 30px;
+}
+
+/* Input Feld - underline color bei focus */
+.input-field input[type=text]:focus {
+    border-bottom: 2px solid red !important;
+    -webkit-box-shadow: 0 2px 0 0 red !important;
+    -moz-box-shadow: 0 2px 0 0 red !important;
+    box-shadow: 0 2px 0 0 red !important;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: black;
+}
+
+
+#Absatz1 {
+    text-align: center;
+}

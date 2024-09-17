@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>Titel der Seite</title>
+</head>
+
+<body>
+    <h2 class="center">Select</h2>
+    <p id="Absatz1">
+        <a class="center" href="https://materializecss.com/select.html"
+            target="_blank">https://materializecss.com/select.html</a>
+    </p>
+    <hr>
+
+    <h3 class="center">Select mit HTML selected</h3>
+    <div class="topmargin row">
+        <div class="input-field col s4 offset-s4">
+            <select id="select1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+        </div>
+    </div>
+
+    <h3 class="center">Select mit JS selected</h3>
+    <p class="center">Wert wird nach 2 Sekunden gesetzt.</p>
+    <div class="topmargin row">
+        <div class="input-field col s4 offset-s4">
+            <select id="select2">
+                <option value="r">Rot</option>
+                <option value="g">Grün</option>
+                <option value="b">Blau</option>
+            </select>
+            <label>Materialize Select</label>
+        </div>
+    </div>
+    <p id="Absatz1">
+        <button class="btn" id="WerteLesen">Werte auslesen</button>
+    </p>
+
+
+
+    <script type="module" src="dropdown.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.topmargin {
+    margin-top: 30px;
+}
+
+/* Label - Text Farbe bei focus */
+.input-field input:focus+label {
+    color: pink !important;
+}
+
+/* Input Feld - underline color bei focus */
+.input-field input[type=text]:focus {
+    border-bottom: 2px solid pink !important;
+    -webkit-box-shadow: 0 2px 0 0 pink !important;
+    -moz-box-shadow: 0 2px 0 0 pink !important;
+    box-shadow: 0 2px 0 0 pink !important;
+}
+
+/* ICON - Farbe bei active*/
+.input-field .prefix.active {
+    color: pink !important;
+}
+
+#Absatz1 {
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Zahl Bereich Kontrolle</title>
+    <link rel="stylesheet" href="range.css">
+</head>
+<body>
+
+    <div class="container">
+        <h4>Zahlen Bereich Formular</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="from-number" type="number" class="validate" required>
+                        <label for="from-number">Von (Startzahl)</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="to-number" type="number" class="validate" required>
+                        <label for="to-number">Bis (Endzahl)</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="check-number" type="number" class="validate" required disabled>
+                        <label for="check-number">Zahl eingeben</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="button" id="submit-btn">Prüfen
+                    <i class="material-icons right">check</i>
+                </button>
+            </form>
+        </div>
+
+        <div class="output">
+            <h5>Ausgabe:</h5>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="rage.js"></script>
+</body>
+</html>
