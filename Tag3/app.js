@@ -1,28 +1,28 @@
 // get Data from api
-function getData() {
-    $.ajax({
-        type: "get",
-        url: "./api/api.php",
-        //data: "data",
-        dataType: "json",
-        success: function (response) {
-            console.log(response);
-        }
-    });
-}
+// function getData() {
+//     $.ajax({
+//         type: "get",
+//         url: "./api/api.php",
+//         //data: "data",
+//         dataType: "json",
+//         success: function (response) {
+//             console.log(response);
+//         }
+//     });
+// }
 
-function getDataID(id) {
-    // nur ein Datensatz holen
-    $.ajax({
-        type: "get",
-        url: "./api/api.php?id=" + id,
-        //data: "data",
-        dataType: "json",
-        success: function (response) {
-            console.log(response);
-        }
-    });
-}
+// function getDataID(id) {
+//     // nur ein Datensatz holen
+//     $.ajax({
+//         type: "get",
+//         url: "./api/api.php?id=" + id,
+//         //data: "data",
+//         dataType: "json",
+//         success: function (response) {
+//             console.log(response);
+//         }
+//     });
+// }
 
 
 function insertData(data){
@@ -107,7 +107,7 @@ function test1(){
 
 
 
-
+// --------------------------------Wichtig---------------------------------------------------------------------
 function renderData(){
     // Daten holen (1)
     $.ajax({
@@ -139,4 +139,4 @@ function renderData(){
     });
 }
 
-export {renderData, getData, getDataID, insertData, updateData, deleteData};
+export {renderData, insertData, updateData, deleteData};

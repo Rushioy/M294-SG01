@@ -1,2 +1,9 @@
 id;name;kraftstoff;farbe;bauart;tanken;date;bemerkung;status
+1;Opel;Diesel;blau;SUV;4;1.5.2000;Beschreibung 01;checked
 2;VW;Benzin;yellow;PKW;7;7.6.2017;Beschreibung 02;
+3;BMW;Diesel;green;SUV;5;5.5.2018;Beschreibung 03;
+4;Mercedes;Benzin;red;PKW;6;6.6.2019;Beschreibung 04;
+5;Fiat;Benzin;brown;PKW;8;8.7.2020;Beschreibung 05;
+6;Audi;Diesel;blue;SUV;9;9.8.2021;Beschreibung 06;
+7;Renault;Benzin;black;PKW;10;10.9.2022;Beschreibung 07;
+8;Peugeout;Diesel;white;PKW;11;11.10.2023;Beschreibung 08;
